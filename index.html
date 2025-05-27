@@ -65,6 +65,7 @@
   </style>
 </head>
 <body>
+  <audio id="birthdayMusic" scr="">
   <h1 id="clickText">Click the button below!</h1>
   <button id="clickButton" onclick="revealMessage()">Click Me</button>
 
@@ -91,6 +92,10 @@
         origin: { y: 0.6}
         scalar: 2.0
       });
+
+      // play music
+      document.getElementById("birthdayMusic").play()
+      
     }
   </script>
 </body>
