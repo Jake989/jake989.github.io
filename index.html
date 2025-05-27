@@ -1,18 +1,66 @@
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-<h1>Joseph's First Website</h1>
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
 
-</br>
- 
-  Hi there, my name is Joseph and here's a list of things I'm interested in:
- <ul>
-  <li>Coding</li>
-  <li>Digital art</li>
-  <li>Game dev(though, I'm still new to it😅)</li>
-  
- </ul>
-</br>
- <br> I'm looking forward to expanding both my skills and this website!
-<hr>
- <br> Stay awesome!
-</HTML>
+    .hidden {
+      display: none;
+    }
+
+    .name {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #d6336c;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1.2em;
+      border: none;
+      background-color: #ff6f61;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e85c50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Click the button below!</h1>
+  <button onclick="revealMessage()">Click Me</button>
+
+  <div id="birthdayMessage" class="hidden">
+    <h1>Happy Birthday</h1>
+    <div class="name">Sophia</div>
+  </div>
+
+  <script>
+    function revealMessage() {
+      document.getElementById("birthdayMessage").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
