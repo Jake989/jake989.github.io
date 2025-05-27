@@ -73,23 +73,20 @@
   </style>
 </head>
 <body>
-  <audio id="birthdayMusic" control>
-    <source scr="happy-birthday-155461.mp3"></audio>
-  
   <h1 id="clickText">Click the button below!</h1>
   <button id="clickButton" onclick="revealMessage()">Click Me</button>
 
   <div id="birthdayMessage" class="hidden">
-    <h1>✨Happy Birthday✨</h1>
-    <div class="name">Marvelous 🥳</div>
+    <h1>Happy Birthday</h1>
+    <div class="name">Daddy</div>
     <div id="wishes">
-      Wishing you a day filled with love, laughter, and cake!  
-      May this year bring you joy, adventure, and all your heart desires in good health in Jesus name.
+      I wish you a day filled with love, joy and cake!  
+      May this year bring you joy and all your heart desires in good health and many more in Jesus name.
     </div>
-    <img src="d41376b6-df67-4b02-b1e4-487e7e3b15e1.jpeg" alt="Cake" >
+    <img src="" alt="Cake" >
   </img>
     <br>
-    <p>Have a great day Marvelous!</p>
+    <p>Have a great day Daddy!</p>
   </div>
     <footer>
       <a href="https://github.com/Jake989/jake989.github.io">behind the scenes.</a>
@@ -101,7 +98,6 @@
       document.getElementById("birthdayMessage").classList.remove("hidden");
       document.getElementById("clickButton").classList.add("hidden");
       document.getElementById("clickText").classList.add("hidden");
-      document.getElementById("birthdayMusic").play();
       
       // Launch confetti
       confetti({
@@ -109,7 +105,9 @@
         spread: 90,
         origin: { y: 0.6},
         scalar: 2.0
-      });     
+      });
+      var audio = new Audio('audio_file.mp3');
+      audio.play();
     }
   </script>
 </body>
