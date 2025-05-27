@@ -84,18 +84,15 @@
       document.getElementById("birthdayMessage").classList.remove("hidden");
       document.getElementById("clickButton").classList.add("hidden");
       document.getElementById("clickText").classList.add("hidden");
-
+      document.getElementById("birthdayMusic").play();
+      
       // Launch confetti
       confetti({
         particleCount: 150,
         spread: 90,
         origin: { y: 0.6}
         scalar: 2.0
-      });
-
-      // play music
-      document.getElementById("birthdayMusic").play()
-      
+      });     
     }
   </script>
 </body>
