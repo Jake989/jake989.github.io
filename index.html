@@ -49,17 +49,19 @@
   </style>
 </head>
 <body>
-  <h1>Click the button below!</h1>
-  <button onclick="revealMessage()">Click Me</button>
+  <h1 id="clickText">Click the button below!</h1>
+  <button id="clickButton" onclick="revealMessage()">Click Me</button>
 
   <div id="birthdayMessage" class="hidden">
     <h1>Happy Birthday</h1>
-    <div class="name">MARVELOUS</div>
+    <div class="name">Sophia</div>
   </div>
 
   <script>
     function revealMessage() {
       document.getElementById("birthdayMessage").classList.remove("hidden");
+      document.getElementById("clickButton").classList.add("hidden");
+      document.getElementById("clickText").classList.add("hidden");
     }
   </script>
 </body>
